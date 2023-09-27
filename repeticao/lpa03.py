@@ -50,10 +50,10 @@ anos.
 #     nome = input('nome')
 #     idade = int(input('idade'))
 #     sexo = input('sexo')
-    
+
 #     if idade > idade_mais_velha:
 #         idade_mais_velha = idade
-#         nome_mais_velha = nome    
+#         nome_mais_velha = nome
 
 #     soma += idade
 #     if idade < 20:
@@ -77,9 +77,38 @@ um menu para calcular.
 5 - Sair do programa
 '''
 
+while True:
+
+    valor1 = float(input("Digite um valor: "))
+    valor2 = float(input("Digite outro valor: \n"))
+    
+    print("\nOpções")
+    print("1 - Somar")
+    print("2 - Subtrair")
+    print("3 - Multiplicar")
+    print("4 - Dividir")
+    print("5 - Sair")
+
+    opcao = input("Selecione a opção: ")
+
+    match opcao:
+        case '1':
+            print(valor1 + valor2)
+        case '2':
+            print(valor1 - valor2)
+        case '3':
+            print(valor1 / valor2)
+        case '4':
+            print(valor1 * valor2)
+        case '5':
+            print("Saindo do loop...")
+            break
+
+
 # for i in range(2):
 #     valor = float(input('valor: '))
 #     valor2 = float(input('valor2: '))
+
 #     print("1 - somar")
 #     print("2 - multiplicar")
 #     print("3 - dividir")
@@ -103,6 +132,6 @@ um menu para calcular.
 #         elif opcao == '4':
 #             print(valor - valor2)
 
-        
+
 '''
 '''
